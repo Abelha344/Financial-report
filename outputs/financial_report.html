@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Financial Report Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 24px;
+      color: #222;
+      background: #fafafa;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+    .chart {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      background: #fff;
+      padding: 6px;
+    }
+    .pnl-table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 14px;
+    }
+    .pnl-table th, .pnl-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: right;
+    }
+    .pnl-table th {
+      background: #f1f3f5;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Financial Report Dashboard</h1>
+  <div class="card">
+    <h2>Profit & Loss Summary</h2>
+    <table class="dataframe pnl-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>year</th>
+      <th>month</th>
+      <th>month_name</th>
+      <th>cash_in</th>
+      <th>cash_out</th>
+      <th>cogs</th>
+      <th>total_expenses</th>
+      <th>total_revenue</th>
+      <th>gross_profit</th>
+      <th>net_profit</th>
+      <th>monthly_cash_flow</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2010</td>
+      <td>12</td>
+      <td>Dec</td>
+      <td>362316</td>
+      <td>20088</td>
+      <td>0</td>
+      <td>20088</td>
+      <td>362316</td>
+      <td>362316</td>
+      <td>342228</td>
+      <td>342228</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>1</td>
+      <td>Jan</td>
+      <td>397716</td>
+      <td>88750</td>
+      <td>0</td>
+      <td>88750</td>
+      <td>397716</td>
+      <td>397716</td>
+      <td>308966</td>
+      <td>308966</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>2</td>
+      <td>Feb</td>
+      <td>286695</td>
+      <td>8706</td>
+      <td>0</td>
+      <td>8706</td>
+      <td>286695</td>
+      <td>286695</td>
+      <td>277989</td>
+      <td>277989</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>3</td>
+      <td>Mar</td>
+      <td>384950</td>
+      <td>33078</td>
+      <td>0</td>
+      <td>33078</td>
+      <td>384950</td>
+      <td>384950</td>
+      <td>351872</td>
+      <td>351872</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>4</td>
+      <td>Apr</td>
+      <td>312176</td>
+      <td>23078</td>
+      <td>0</td>
+      <td>23078</td>
+      <td>312176</td>
+      <td>312176</td>
+      <td>289098</td>
+      <td>289098</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>5</td>
+      <td>May</td>
+      <td>399425</td>
+      <td>19034</td>
+      <td>0</td>
+      <td>19034</td>
+      <td>399425</td>
+      <td>399425</td>
+      <td>380391</td>
+      <td>380391</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>6</td>
+      <td>Jun</td>
+      <td>394337</td>
+      <td>52714</td>
+      <td>0</td>
+      <td>52714</td>
+      <td>394337</td>
+      <td>394337</td>
+      <td>341623</td>
+      <td>341623</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>7</td>
+      <td>Jul</td>
+      <td>407539</td>
+      <td>16423</td>
+      <td>0</td>
+      <td>16423</td>
+      <td>407539</td>
+      <td>407539</td>
+      <td>391116</td>
+      <td>391116</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>8</td>
+      <td>Aug</td>
+      <td>425016</td>
+      <td>18817</td>
+      <td>0</td>
+      <td>18817</td>
+      <td>425016</td>
+      <td>425016</td>
+      <td>406199</td>
+      <td>406199</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>9</td>
+      <td>Sep</td>
+      <td>575416</td>
+      <td>25599</td>
+      <td>0</td>
+      <td>25599</td>
+      <td>575416</td>
+      <td>575416</td>
+      <td>549817</td>
+      <td>549817</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>10</td>
+      <td>Oct</td>
+      <td>628745</td>
+      <td>58213</td>
+      <td>0</td>
+      <td>58213</td>
+      <td>628745</td>
+      <td>628745</td>
+      <td>570532</td>
+      <td>570532</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>11</td>
+      <td>Nov</td>
+      <td>771598</td>
+      <td>31312</td>
+      <td>0</td>
+      <td>31312</td>
+      <td>771598</td>
+      <td>771598</td>
+      <td>740286</td>
+      <td>740286</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>12</td>
+      <td>Dec</td>
+      <td>315052</td>
+      <td>88719</td>
+      <td>0</td>
+      <td>88719</td>
+      <td>315052</td>
+      <td>315052</td>
+      <td>226333</td>
+      <td>226333</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+  <div class="card">
+    <h2>Monthly Cash In vs Cash Out</h2>
+    <img class="chart" src="monthly_cash_in_vs_out.png" alt="Monthly Cash In vs Cash Out" />
+  </div>
+  <div class="card">
+    <h2>Expense Category Breakdown</h2>
+    <img class="chart" src="expense_category_breakdown.png" alt="Expense Category Breakdown" />
+  </div>
+  <div class="card">
+    <h2>Net Profit Trend</h2>
+    <img class="chart" src="net_profit_trend.png" alt="Net Profit Trend" />
+  </div>
+</body>
+</html>

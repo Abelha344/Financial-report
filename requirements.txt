@@ -1,0 +1,8 @@
+pandas
+numpy
+matplotlib
+mysql-connector-python
+sqlalchemy
+gspread
+oauth2client
+openpyxl
